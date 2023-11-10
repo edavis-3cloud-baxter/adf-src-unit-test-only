@@ -1,0 +1,9 @@
+{
+	"name": "adf-src",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3d2b1736-c5e3-43e1-971a-49d2e4ccb042",
+		"tenantId": "f4dcdb22-a4c7-4f4c-a390-1954365b828c"
+	}
+}
