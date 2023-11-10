@@ -1,6 +1,7 @@
 {
 	"name": "pipeline1",
 	"properties": {
+		"description": "nnn",
 		"activities": [
 			{
 				"name": "Copy data1",
