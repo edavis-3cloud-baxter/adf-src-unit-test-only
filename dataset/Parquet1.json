@@ -1,0 +1,46 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "20231109025711.parquet",
+				"folderPath": "landing-zone/PostgreSQL/BDHP/cqi__ns/dl_cqi__preference_type/da1b8636-b817-4ae2-a31b-0d1e91187fb9",
+				"fileSystem": "datalake"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "UTF8"
+			},
+			{
+				"name": "created_date_time",
+				"type": "UTF8"
+			},
+			{
+				"name": "updated_date_time",
+				"type": "UTF8"
+			},
+			{
+				"name": "created_by",
+				"type": "UTF8"
+			},
+			{
+				"name": "updated_by",
+				"type": "UTF8"
+			},
+			{
+				"name": "name",
+				"type": "UTF8"
+			}
+		]
+	}
+}

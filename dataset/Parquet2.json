@@ -1,0 +1,49 @@
+{
+	"name": "Parquet2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "raw",
+				"fileSystem": "datalake"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "PersonID",
+				"type": "INT32"
+			},
+			{
+				"name": "LastName",
+				"type": "UTF8"
+			},
+			{
+				"name": "FirstName",
+				"type": "UTF8"
+			},
+			{
+				"name": "Device",
+				"type": "UTF8"
+			},
+			{
+				"name": "NumberInUse",
+				"type": "INT32"
+			},
+			{
+				"name": "Frequency",
+				"type": "UTF8"
+			},
+			{
+				"name": "DATE_LAST_MODIFIED",
+				"type": "DATE"
+			}
+		]
+	}
+}
